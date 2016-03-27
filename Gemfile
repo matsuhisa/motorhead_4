@@ -29,3 +29,4 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+gem 'new_books', path: 'app/engines/new_books'
