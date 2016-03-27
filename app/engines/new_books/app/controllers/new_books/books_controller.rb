@@ -1,8 +1,9 @@
 class NewBooks::BooksController < ::BooksController
   include Motorhead::Controller
+  helper NewBooks::ApplicationHelper
 
   def index
-   super
+   @books = Book.all.limit(1)
   end
 
 end
